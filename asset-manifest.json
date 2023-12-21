@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/calc-utility-bill/static/css/main.1b06d9e5.css",
-    "main.js": "/calc-utility-bill/static/js/main.4fd6d917.js",
+    "main.css": "/calc-utility-bill/static/css/main.5617c2fd.css",
+    "main.js": "/calc-utility-bill/static/js/main.eda3cbfb.js",
     "static/js/787.c806f637.chunk.js": "/calc-utility-bill/static/js/787.c806f637.chunk.js",
     "index.html": "/calc-utility-bill/index.html",
-    "main.1b06d9e5.css.map": "/calc-utility-bill/static/css/main.1b06d9e5.css.map",
-    "main.4fd6d917.js.map": "/calc-utility-bill/static/js/main.4fd6d917.js.map",
+    "main.5617c2fd.css.map": "/calc-utility-bill/static/css/main.5617c2fd.css.map",
+    "main.eda3cbfb.js.map": "/calc-utility-bill/static/js/main.eda3cbfb.js.map",
     "787.c806f637.chunk.js.map": "/calc-utility-bill/static/js/787.c806f637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b06d9e5.css",
-    "static/js/main.4fd6d917.js"
+    "static/css/main.5617c2fd.css",
+    "static/js/main.eda3cbfb.js"
   ]
 }
