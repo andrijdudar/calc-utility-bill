@@ -70,7 +70,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Квартира:</h2>
               <input
-                class="input is-rounded is-small zoomable-input"
+                class="input is-rounded is-small zoomable-input no-zoom"
                 type="tel"
                 placeholder={rent}
                 value={rent}
@@ -80,7 +80,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Комуналка:</h2>
               <input
-                class="input is-rounded is-small zoomable-input"
+                class="input is-rounded is-small zoomable-input no-zoom"
                 type="tel"
                 placeholder={utility}
                 onTouchStart={(e) => handleTouchStart(e)}
@@ -91,7 +91,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Прибудинкова_територія:</h2>
               <input
-                class="input is-rounded is-small zoomable-input"
+                class="input is-rounded is-small zoomable-input no-zoom"
                 type="tel"
                 placeholder={homeTerritory}
                 onTouchStart={(e) => handleTouchStart(e)}
@@ -102,7 +102,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Витрати_Андрій:</h2>
               <input
-                class="input is-rounded is-small zoomable-input"
+                class="input is-rounded is-small zoomable-input no-zoom"
                 type="tel"
                 placeholder={expensesAndrii}
                 onTouchStart={(e) => handleTouchStart(e)}
@@ -113,7 +113,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Витрати_Любомир:</h2>
               <input
-                class="input is-rounded is-small zoomable-input"
+                class="input is-rounded is-small zoomable-input no-zoom"
                 type="tel"
                 placeholder={expensesLubomir}
                 onTouchStart={(e) => handleTouchStart(e)}
@@ -124,7 +124,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Витрати_Тарас:</h2>
               <input
-                class="input is-rounded is-small zoomable-input"
+                class="input is-rounded is-small zoomable-input no-zoom"
                 type="tel"
                 placeholder={expensesTaras}
                 onTouchStart={(e) => handleTouchStart(e)}
