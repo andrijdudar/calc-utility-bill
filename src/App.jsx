@@ -58,8 +58,8 @@ function App() {
             <label>
               <p>Квартира</p>
               <input
-                class="input is-rounded"
-                type="text"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={rent}
                 value={rent}
                 onChange={(e) => handleRent(e)}
@@ -68,8 +68,8 @@ function App() {
             <label>
               <p>Комуналка</p>
               <input
-                class="input is-rounded"
-                type="text"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={utility}
                 onChange={(e) => handleUtility(e)}
               />
@@ -77,8 +77,8 @@ function App() {
             <label>
               <p>Прибудинкова територія</p>
               <input
-                class="input is-rounded"
-                type="text"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={homeTerritory}
                 onChange={(e) => handleHomeTerritory(e)}
               />
@@ -86,8 +86,8 @@ function App() {
             <label>
               <p>Витрати Андрій</p>
               <input
-                class="input is-rounded"
-                type="text"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={expensesAndrii}
                 onChange={(e) => handleExpensesAndrii(e)}
               />
@@ -95,8 +95,8 @@ function App() {
             <label>
               <p>Витрати Любомир</p>
               <input
-                class="input is-rounded"
-                type="text"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={expensesLubomir}
                 onChange={(e) => handleExpensesLubomir(e)}
               />
@@ -104,8 +104,8 @@ function App() {
             <label>
               <p>Витрати Тарас</p>
               <input
-                class="input is-rounded"
-                type="text"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={expensesTaras}
                 onChange={(e) => handleExpensesTaras(e)}
               />
