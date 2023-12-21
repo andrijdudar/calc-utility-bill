@@ -44,7 +44,7 @@ label {
 }
 
 .container {
-  padding-bottom: 200px;
+  padding: 15px;
 }
 .inputs {
   color: greenyellow;
