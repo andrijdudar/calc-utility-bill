@@ -58,7 +58,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Квартира:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded is-small zoomable-input"
                 type="tel"
                 placeholder={rent}
                 value={rent}
@@ -68,7 +68,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Комуналка:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded is-small zoomable-input"
                 type="tel"
                 placeholder={utility}
                 onChange={(e) => handleUtility(e)}
@@ -77,7 +77,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Прибудинкова_територія:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded is-small zoomable-input"
                 type="tel"
                 placeholder={homeTerritory}
                 onChange={(e) => handleHomeTerritory(e)}
@@ -86,7 +86,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Витрати_Андрій:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded is-small zoomable-input"
                 type="tel"
                 placeholder={expensesAndrii}
                 onChange={(e) => handleExpensesAndrii(e)}
@@ -95,7 +95,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Витрати_Любомир:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded is-small zoomable-input"
                 type="tel"
                 placeholder={expensesLubomir}
                 onChange={(e) => handleExpensesLubomir(e)}
@@ -104,7 +104,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-row'>
               <h2>Витрати_Тарас:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded is-small zoomable-input"
                 type="tel"
                 placeholder={expensesTaras}
                 onChange={(e) => handleExpensesTaras(e)}
