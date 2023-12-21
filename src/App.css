@@ -40,7 +40,7 @@
 }
 
 label {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .container {
@@ -62,17 +62,4 @@ h2 {
   margin-top: 30px;
   color: red;
   font-size: 2rem;
-}
-
-.zoomable-input:focus {
-  transform: scale(1.2);
-  /* Збільшення розміру при фокусі (можете змінити значення за потребою) */
-  transition: transform 0.3s ease;
-  /* Плавна анімація збільшення */
-}
-
-.no-zoom {
-  touch-action: manipulation;
-  font-size: 16px;
-  /* або інший розмір шрифту за вашим вибором */
 }

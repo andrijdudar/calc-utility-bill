@@ -47,18 +47,6 @@ function App() {
     setExpensesTaras(+event.target.value);
   };
 
-
-  function handleTouchStart(e) {
-    e.preventDefault();
-    const el = e.target;
-    el.classList.add('no-zoom');
-    el.focus();
-  }
-
-  function handleTouchMove(e) {
-    e.preventDefault();
-  }
-
   return (
     <div className="App">
       <header className="App-header">
@@ -67,68 +55,58 @@ function App() {
             Калькулятор комуналки
           </h1>
           <div className='inputs is-flex is-flex is-flex-direction-column'>
-            <label className='is-flex is-flex is-flex-direction-row'>
+            <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Квартира:</h2>
               <input
-                class="input is-rounded is-small zoomable-input no-zoom"
-                type="tel"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={rent}
                 value={rent}
                 onChange={(e) => handleRent(e)}
               />
             </label>
-            <label className='is-flex is-flex is-flex-direction-row'>
+            <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Комуналка:</h2>
               <input
-                class="input is-rounded is-small zoomable-input no-zoom"
-                type="tel"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={utility}
-                onTouchStart={(e) => handleTouchStart(e)}
-                onTouchMove={(e) => handleTouchMove(e)}
                 onChange={(e) => handleUtility(e)}
               />
             </label>
-            <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Прибудинкова_територія:</h2>
+            <label className='is-flex is-flex is-flex-direction-column'>
+              <h2>Прибудинкова територія:</h2>
               <input
-                class="input is-rounded is-small zoomable-input no-zoom"
-                type="tel"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={homeTerritory}
-                onTouchStart={(e) => handleTouchStart(e)}
-                onTouchMove={(e) => handleTouchMove(e)}
                 onChange={(e) => handleHomeTerritory(e)}
               />
             </label>
-            <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Витрати_Андрій:</h2>
+            <label className='is-flex is-flex is-flex-direction-column'>
+              <h2>Витрати Андрій:</h2>
               <input
-                class="input is-rounded is-small zoomable-input no-zoom"
-                type="tel"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={expensesAndrii}
-                onTouchStart={(e) => handleTouchStart(e)}
-                onTouchMove={(e) => handleTouchMove(e)}
                 onChange={(e) => handleExpensesAndrii(e)}
               />
             </label>
-            <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Витрати_Любомир:</h2>
+            <label className='is-flex is-flex is-flex-direction-column'>
+              <h2>Витрати Любомир:</h2>
               <input
-                class="input is-rounded is-small zoomable-input no-zoom"
-                type="tel"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={expensesLubomir}
-                onTouchStart={(e) => handleTouchStart(e)}
-                onTouchMove={(e) => handleTouchMove(e)}
                 onChange={(e) => handleExpensesLubomir(e)}
               />
             </label>
-            <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Витрати_Тарас:</h2>
+            <label className='is-flex is-flex is-flex-direction-column'>
+              <h2>Витрати Тарас:</h2>
               <input
-                class="input is-rounded is-small zoomable-input no-zoom"
-                type="tel"
+                class="input is-rounded is-small"
+                type="number"
                 placeholder={expensesTaras}
-                onTouchStart={(e) => handleTouchStart(e)}
-                onTouchMove={(e) => handleTouchMove(e)}
                 onChange={(e) => handleExpensesTaras(e)}
               />
             </label>
