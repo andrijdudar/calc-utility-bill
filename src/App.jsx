@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className='container'>
+        {/* <div className='container'> */}
           <h1>
             Калькулятор комуналки
           </h1>
@@ -118,7 +118,7 @@ function App() {
             <p>Любомир {Math.ceil(calcLubomir())} грн</p>
             <p>Тарас {Math.ceil(calcTaras())} грн</p>
           </div>
-        </div>
+        {/* </div> */}
       </header>
     </div>
   );

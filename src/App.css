@@ -38,6 +38,7 @@ label {
   /* padding: 15px; */
 }
 .inputs {
+  width: 100%;
   color: greenyellow;
 
 }
