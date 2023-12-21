@@ -59,7 +59,7 @@ function App() {
               <h2>Квартира:</h2>
               <input
                 class="input is-rounded is-small"
-                type="number"
+                type="tel"
                 placeholder={rent}
                 value={rent}
                 onChange={(e) => handleRent(e)}
@@ -69,7 +69,7 @@ function App() {
               <h2>Комуналка:</h2>
               <input
                 class="input is-rounded is-small"
-                type="number"
+                type="tel"
                 placeholder={utility}
                 onChange={(e) => handleUtility(e)}
               />
@@ -78,7 +78,7 @@ function App() {
               <h2>Прибудинкова_територія:</h2>
               <input
                 class="input is-rounded is-small"
-                type="number"
+                type="tel"
                 placeholder={homeTerritory}
                 onChange={(e) => handleHomeTerritory(e)}
               />
@@ -87,7 +87,7 @@ function App() {
               <h2>Витрати_Андрій:</h2>
               <input
                 class="input is-rounded is-small"
-                type="number"
+                type="tel"
                 placeholder={expensesAndrii}
                 onChange={(e) => handleExpensesAndrii(e)}
               />
@@ -96,7 +96,7 @@ function App() {
               <h2>Витрати_Любомир:</h2>
               <input
                 class="input is-rounded is-small"
-                type="number"
+                type="tel"
                 placeholder={expensesLubomir}
                 onChange={(e) => handleExpensesLubomir(e)}
               />
@@ -105,7 +105,7 @@ function App() {
               <h2>Витрати_Тарас:</h2>
               <input
                 class="input is-rounded is-small"
-                type="number"
+                type="tel"
                 placeholder={expensesTaras}
                 onChange={(e) => handleExpensesTaras(e)}
               />
