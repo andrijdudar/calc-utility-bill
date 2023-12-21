@@ -54,9 +54,9 @@ function App() {
           <h1>
             Калькулятор комуналки
           </h1>
-          <div className='inputs'>
-            <label>
-              <p>Квартира</p>
+          <div className='inputs is-flex is-flex is-flex-direction-column'>
+            <label className='is-flex is-flex is-flex-direction-row'>
+              <h2>Квартира:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -65,8 +65,8 @@ function App() {
                 onChange={(e) => handleRent(e)}
               />
             </label>
-            <label>
-              <p>Комуналка</p>
+            <label className='is-flex is-flex is-flex-direction-row'>
+              <h2>Комуналка:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -74,8 +74,8 @@ function App() {
                 onChange={(e) => handleUtility(e)}
               />
             </label>
-            <label>
-              <p>Прибудинкова територія</p>
+            <label className='is-flex is-flex is-flex-direction-row'>
+              <h2>Прибудинкова територія:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -83,8 +83,8 @@ function App() {
                 onChange={(e) => handleHomeTerritory(e)}
               />
             </label>
-            <label>
-              <p>Витрати Андрій</p>
+            <label className='is-flex is-flex is-flex-direction-row'>
+              <h2>Витрати Андрій:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -92,8 +92,8 @@ function App() {
                 onChange={(e) => handleExpensesAndrii(e)}
               />
             </label>
-            <label>
-              <p>Витрати Любомир</p>
+            <label className='is-flex is-flex is-flex-direction-row'>
+              <h2>Витрати Любомир:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -101,8 +101,8 @@ function App() {
                 onChange={(e) => handleExpensesLubomir(e)}
               />
             </label>
-            <label>
-              <p>Витрати Тарас</p>
+            <label className='is-flex is-flex is-flex-direction-row'>
+              <h2>Витрати Тарас:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -113,9 +113,11 @@ function App() {
           </div>
           {/* <p>загальна сума <span>{Math.ceil(calcTotalUtility())}</span> грн</p> */}
           {/* <p>загальнi витрати {Math.ceil(calcTotalExpenses())} грн</p> */}
-          <p>Андрій {Math.ceil(calcAndrii())} грн</p>
-          <p>Любомир {Math.ceil(calcLubomir())} грн</p>
-          <p>Тарас {Math.ceil(calcTaras())} грн</p>
+          <div className='result'>
+            <p>Андрій {Math.ceil(calcAndrii())} грн</p>
+            <p>Любомир {Math.ceil(calcLubomir())} грн</p>
+            <p>Тарас {Math.ceil(calcTaras())} грн</p>
+          </div>
         </div>
       </header>
     </div>
