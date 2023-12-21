@@ -75,7 +75,7 @@ function App() {
               />
             </label>
             <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Прибудинкова територія:</h2>
+              <h2>Прибудинкова_територія:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -84,7 +84,7 @@ function App() {
               />
             </label>
             <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Витрати Андрій:</h2>
+              <h2>Витрати_Андрій:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -93,7 +93,7 @@ function App() {
               />
             </label>
             <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Витрати Любомир:</h2>
+              <h2>Витрати_Любомир:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
@@ -102,7 +102,7 @@ function App() {
               />
             </label>
             <label className='is-flex is-flex is-flex-direction-row'>
-              <h2>Витрати Тарас:</h2>
+              <h2>Витрати_Тарас:</h2>
               <input
                 class="input is-rounded is-small"
                 type="number"
