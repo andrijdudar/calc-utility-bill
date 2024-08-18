@@ -39,11 +39,14 @@ label {
 }
 .inputs {
   width: 100%;
-  color: greenyellow;
+  /* color: greenyellow; */
 
 }
+label {
+  font-size: small;
+}
 h1 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: yellow;
 }
 h2 {

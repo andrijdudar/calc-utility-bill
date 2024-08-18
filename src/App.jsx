@@ -9,21 +9,22 @@ function App() {
   const [expensesAndrii, setExpensesAndrii] = useState(0);
   const [expensesLubomir, setExpensesLubomir] = useState(0);
   const [expensesTaras, setExpensesTaras] = useState(0);
-  const calcTotalExpenses = () => {
-    return expensesAndrii + expensesLubomir + expensesTaras;
-  };
+  const [expensesSolomia, setExpensesSolomia] = useState(0);
 
   const calcTotalUtility = () => {
     return utility + homeTerritory;
   };
+
   const calcAndrii = () => {
-    return (((calcTotalUtility() / 3) + rent + (expensesLubomir / 3) + (expensesTaras / 3)) - expensesAndrii);
+    return (((calcTotalUtility() / 4) + rent + (expensesLubomir / 4) + (expensesTaras / 4) + (expensesSolomia /4)) - expensesAndrii);
   };
+  
   const calcLubomir = () => {
-    return (((calcTotalUtility() / 3) + rent + (expensesAndrii / 3) + (expensesTaras / 3)) - expensesLubomir);
+    return (((calcTotalUtility() / 4) + rent + (expensesAndrii / 4) + (expensesTaras / 4) + (expensesSolomia / 4)) - expensesLubomir);
+
   };
-  const calcTaras = () => {
-    return (((calcTotalUtility() / 3) + rent + (expensesAndrii / 3) + (expensesLubomir / 3)) - expensesTaras);
+  const calcTarasAndSolomia = () => {
+    return (((calcTotalUtility() / 2) + rent + (expensesAndrii / 2) + (expensesLubomir / 2)) - (expensesTaras + expensesSolomia));
   };
 
 
@@ -45,6 +46,9 @@ function App() {
   };
   const handleExpensesTaras = (event) => {
     setExpensesTaras(+event.target.value);
+  };
+  const handleExpensesSolomia = (event) => {
+    setExpensesSolomia(+event.target.value);
   };
 
   return (
@@ -115,8 +119,8 @@ function App() {
               <input
                 class="input is-rounded is-small"
                 type="tel"
-                placeholder={expensesTaras}
-                onChange={(e) => handleExpensesTaras(e)}
+                placeholder={expensesSolomia}
+                onChange={(e) => handleExpensesSolomia(e)}
               />
             </label>
           </div>
@@ -125,12 +129,11 @@ function App() {
           <div className='result'>
             <p>Андрій {Math.ceil(calcAndrii())} грн</p>
             <p>Любомир {Math.ceil(calcLubomir())} грн</p>
-            <p>Тарас і Соломія {Math.ceil(calcTaras())} грн</p>
+            <p>Тарас і Соломія {Math.ceil(calcTarasAndSolomia())} грн</p>
           </div>
         </div>
       </header>
     </div>
-  );
-}
+  );}
 
 export default App;
