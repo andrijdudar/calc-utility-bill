@@ -116,12 +116,11 @@ function App() {
           <div className='result'>
             <p>Андрій {Math.ceil(calcAndrii())} грн</p>
             <p>Любомир {Math.ceil(calcLubomir())} грн</p>
-            <p>Тарас {Math.ceil(calcTaras())} грн</p>
+            <p>Тарас і Соломія {Math.ceil(calcTaras())} грн</p>
           </div>
         </div>
       </header>
     </div>
-  );
-}
+  );}
 
 export default App;
