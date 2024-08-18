@@ -110,6 +110,15 @@ function App() {
                 onChange={(e) => handleExpensesTaras(e)}
               />
             </label>
+            <label className='is-flex is-flex is-flex-direction-column'>
+              <h2>Витрати Соломія:</h2>
+              <input
+                class="input is-rounded is-small"
+                type="tel"
+                placeholder={expensesTaras}
+                onChange={(e) => handleExpensesTaras(e)}
+              />
+            </label>
           </div>
           {/* <p>загальна сума <span>{Math.ceil(calcTotalUtility())}</span> грн</p> */}
           {/* <p>загальнi витрати {Math.ceil(calcTotalExpenses())} грн</p> */}
@@ -121,6 +130,7 @@ function App() {
         </div>
       </header>
     </div>
-  );}
+  );
+}
 
 export default App;
