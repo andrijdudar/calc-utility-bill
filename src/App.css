@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  /* padding: 10px; */
+  margin: 5px 10px ;
+  font-size: 16px;
+}
 
 .App {
   text-align: center;
@@ -37,24 +49,25 @@ label {
 .container {
   padding: 15px;
 }
+
 .inputs {
   width: 100%;
-  /* color: greenyellow; */
-
 }
+
 label {
   font-size: small;
 }
+
 h1 {
-  /* font-size: 1.5rem; */
   color: yellow;
-}
-h2 {
-  /* padding-right: 20px; */
 }
 
 .result {
   margin-top: 20px;
   color: red;
   font-size: 1.5rem;
+}
+
+.input {
+  font-size: 10px;
 }
