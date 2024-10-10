@@ -18,7 +18,7 @@ function App() {
   const calcAndrii = () => {
     return (((calcTotalUtility() / 4) + rent + (expensesLubomir / 4) + (expensesTaras / 4) + (expensesSolomia /4)) - expensesAndrii);
   };
-  
+
   const calcLubomir = () => {
     return (((calcTotalUtility() / 4) + rent + (expensesAndrii / 4) + (expensesTaras / 4) + (expensesSolomia / 4)) - expensesLubomir);
 
@@ -62,7 +62,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Квартира:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded "
                 type="tel"
                 placeholder={rent}
                 value={rent}
@@ -72,7 +72,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Комуналка:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded"
                 type="tel"
                 placeholder={utility}
                 onChange={(e) => handleUtility(e)}
@@ -81,7 +81,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Прибудинкова територія:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded "
                 type="tel"
                 placeholder={homeTerritory}
                 onChange={(e) => handleHomeTerritory(e)}
@@ -90,7 +90,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Витрати Андрій:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded "
                 type="tel"
                 placeholder={expensesAndrii}
                 onChange={(e) => handleExpensesAndrii(e)}
@@ -99,7 +99,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Витрати Любомир:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded "
                 type="tel"
                 placeholder={expensesLubomir}
                 onChange={(e) => handleExpensesLubomir(e)}
@@ -108,7 +108,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Витрати Тарас:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded "
                 type="tel"
                 placeholder={expensesTaras}
                 onChange={(e) => handleExpensesTaras(e)}
@@ -117,7 +117,7 @@ function App() {
             <label className='is-flex is-flex is-flex-direction-column'>
               <h2>Витрати Соломія:</h2>
               <input
-                class="input is-rounded is-small"
+                class="input is-rounded "
                 type="tel"
                 placeholder={expensesSolomia}
                 onChange={(e) => handleExpensesSolomia(e)}
